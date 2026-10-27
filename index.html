@@ -3,57 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#193f34" />
-    <meta name="description" content="Only One Duck — a small garden of useful, curious things." />
-    <title>only one duck — garden</title>
+    <meta name="theme-color" content="#786043" />
+    <meta name="description" content="Only One Duck — a room with a garden beyond the glass." />
+    <title>only one duck — room</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="garden" id="garden">
-      <div class="scene" aria-hidden="true"></div>
-      <div class="scene-grain" aria-hidden="true"></div>
-      <div class="scene-vignette" aria-hidden="true"></div>
-      <div class="sunwash" aria-hidden="true"></div>
-      <div class="cursor-glow" aria-hidden="true"></div>
+    <main class="room" id="room">
+      <div class="garden-layer" aria-hidden="true"></div>
+      <div class="window-light" aria-hidden="true"></div>
+      <div class="duck-stage" aria-label="The garden pond, where the duck will roam later"><i></i><i></i></div>
+      <div class="glass-layer" aria-hidden="true"></div>
+      <div class="room-layer" aria-hidden="true"></div>
+      <div class="warmth" aria-hidden="true"></div>
 
       <header class="masthead">
-        <a class="wordmark" href="/" aria-label="Only One Duck garden home">only one duck<span>.</span>garden</a>
-        <p>one garden · no menu</p>
+        <a class="wordmark" href="/" aria-label="Only One Duck home">only one duck<span>.</span>garden</a>
+        <p>from the bed, toward the light</p>
       </header>
 
-      <section class="intro" aria-label="Garden introduction">
-        <p class="kicker">a private public garden</p>
-        <h1>look closer<span>.</span></h1>
-        <p class="instruction">the living things know the way</p>
-      </section>
+      <p class="whisper">some things are better found.</p>
 
-      <nav class="living-map" aria-label="Garden paths">
-        <a class="being lotus-path" href="/lotus" data-label="useful things">
-          <span class="hotspot lotus-hotspot"></span>
-          <span class="label">useful things <b>↗</b></span>
-          <span class="sr-only">Useful things</span>
-        </a>
-        <a class="being butterfly-path wanderer" href="/butterflies" data-label="small experiments">
-          <img src="assets/butterfly.png" alt="" />
-          <span class="label">small experiments <b>↗</b></span>
-          <span class="sr-only">Small experiments</span>
-        </a>
-        <a class="being dragonfly-path wanderer" href="/dragonflies" data-label="quick things">
-          <img src="assets/dragonfly.png" alt="" />
-          <span class="label">quick things <b>↗</b></span>
-          <span class="sr-only">Quick things</span>
-        </a>
-        <a class="being duck-path wanderer" href="/duck" data-label="the only duck">
-          <img src="assets/only-duck.png" alt="" />
-          <span class="label">the only duck <b>↗</b></span>
-          <span class="sr-only">The only duck</span>
-        </a>
+      <nav class="room-map" aria-label="Things around the room">
+        <a class="object guitar" href="/guitar" data-label="sound room"><span class="target"></span><span class="label">sound room <b>↗</b></span><span class="sr-only">Sound room</span></a>
+        <a class="object shelf" href="/shelf" data-label="the bookshelf"><span class="target"></span><span class="label">the bookshelf <b>↗</b></span><span class="sr-only">The bookshelf</span></a>
+        <a class="object desk" href="/desk" data-label="useful things"><span class="target"></span><span class="label">useful things <b>↗</b></span><span class="sr-only">Useful things</span></a>
+        <a class="object lamp" href="/lamp" data-label="after dark"><span class="target"></span><span class="label">after dark <b>↗</b></span><span class="sr-only">After dark</span></a>
+        <a class="object garden-window" href="/garden" data-label="outside"><span class="target"></span><span class="label">outside <b>↗</b></span><span class="sr-only">Outside in the garden</span></a>
       </nav>
 
-      <aside class="legend" aria-label="Garden note">
-        <span></span>Nothing here is ornamental.
-      </aside>
-      <footer>please do not manufacture additional ducks</footer>
+      <footer>the duck is out there somewhere</footer>
     </main>
     <script src="script.js"></script>
   </body>
