@@ -3,33 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#143c33" />
+    <meta name="theme-color" content="#193f34" />
+    <meta name="description" content="Only One Duck — a small garden of useful, curious things." />
     <title>only one duck — garden</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="garden" aria-label="Only One Duck garden">
-      <div class="sun-haze"></div>
-      <div class="mountain mountain-a"></div><div class="mountain mountain-b"></div>
-      <div class="forest forest-back"></div><div class="forest forest-front"></div>
-      <div class="flora" aria-hidden="true"></div>
-      <div class="water"><div class="water-light"></div><div class="water-rings"></div></div>
-      <div class="lily-pads" aria-hidden="true"></div>
-      <div class="garden-grain" aria-hidden="true"></div>
-      <header>
-        <a href="/" aria-label="only one duck garden home">only one duck<span>.</span>garden</a>
-        <p>do not disturb the duck</p>
+    <main class="garden" id="garden">
+      <div class="scene" aria-hidden="true"></div>
+      <div class="scene-grain" aria-hidden="true"></div>
+      <div class="scene-vignette" aria-hidden="true"></div>
+      <div class="sunwash" aria-hidden="true"></div>
+      <div class="cursor-glow" aria-hidden="true"></div>
+
+      <header class="masthead">
+        <a class="wordmark" href="/" aria-label="Only One Duck garden home">only one duck<span>.</span>garden</a>
+        <p>one garden · no menu</p>
       </header>
-      <p class="garden-whisper">there is more than one way in</p>
-      <a class="lotus destination" href="/lotus" aria-label="Enter through the white lotus" data-name="useful things">
-        <span class="lotus-shadow"></span>
-        <i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i><b></b><em></em>
-      </a>
-      <a class="butterfly destination rover" href="/butterflies" aria-label="Visit small experiments" data-name="little experiments"><i></i><i></i><i></i><i></i><em></em></a>
-      <a class="dragonfly destination rover" href="/dragonflies" aria-label="Visit quick things" data-name="quick things"><i></i><i></i><b></b><em></em></a>
-      <a class="duck destination rover" href="/duck" aria-label="Speak to the only duck" data-name="the only duck"><span class="duck-body"></span><span class="duck-neck"></span><span class="duck-head"></span><span class="duck-bill"></span><span class="duck-eye"></span><span class="duck-wing"></span><i class="ripple ripple-a"></i><i class="ripple ripple-b"></i><em></em></a>
-      <div class="fireflies" aria-hidden="true"></div>
-      <footer>© a garden with exactly one duck</footer>
+
+      <section class="intro" aria-label="Garden introduction">
+        <p class="kicker">a private public garden</p>
+        <h1>look closer<span>.</span></h1>
+        <p class="instruction">the living things know the way</p>
+      </section>
+
+      <nav class="living-map" aria-label="Garden paths">
+        <a class="being lotus-path" href="/lotus" data-label="useful things">
+          <span class="hotspot lotus-hotspot"></span>
+          <span class="label">useful things <b>↗</b></span>
+          <span class="sr-only">Useful things</span>
+        </a>
+        <a class="being butterfly-path wanderer" href="/butterflies" data-label="small experiments">
+          <img src="assets/butterfly.png" alt="" />
+          <span class="label">small experiments <b>↗</b></span>
+          <span class="sr-only">Small experiments</span>
+        </a>
+        <a class="being dragonfly-path wanderer" href="/dragonflies" data-label="quick things">
+          <img src="assets/dragonfly.png" alt="" />
+          <span class="label">quick things <b>↗</b></span>
+          <span class="sr-only">Quick things</span>
+        </a>
+        <a class="being duck-path wanderer" href="/duck" data-label="the only duck">
+          <img src="assets/only-duck.png" alt="" />
+          <span class="label">the only duck <b>↗</b></span>
+          <span class="sr-only">The only duck</span>
+        </a>
+      </nav>
+
+      <aside class="legend" aria-label="Garden note">
+        <span></span>Nothing here is ornamental.
+      </aside>
+      <footer>please do not manufacture additional ducks</footer>
     </main>
     <script src="script.js"></script>
   </body>
