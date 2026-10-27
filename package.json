@@ -1,0 +1,7 @@
+{
+  "name": "only-one-duck-garden",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}
